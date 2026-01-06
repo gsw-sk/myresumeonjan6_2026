@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaik Sha - Data Analyst Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        .download-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #2563eb;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            transition: background 0.3s;
+            z-index: 1000;
+        }
+        
+        .download-btn:hover {
+            background: #1d4ed8;
+        }
+        
+        .resume {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            min-height: 100vh;
+        }
+        
+        .sidebar {
+            background: #1e3a5f;
+            color: white;
+            padding: 40px 30px;
+        }
+        
+        .main-content {
+            padding: 40px 50px;
+        }
+        
+        .header {
+            margin-bottom: 30px;
+        }
+        
+        .name {
+            font-size: 36px;
+            font-weight: 700;
+            color: #1e3a5f;
+            margin-bottom: 5px;
+        }
+        
+        .title {
+            font-size: 20px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .summary {
+            line-height: 1.6;
+            color: #333;
+            text-align: justify;
+        }
+        
+        .sidebar h2 {
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #4a90e2;
+        }
+        
+        .sidebar-section {
+            margin-bottom: 30px;
+        }
+        
+        .contact-item {
+            margin-bottom: 12px;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+        
+        .contact-item a {
+            color: #4a90e2;
+            text-decoration: none;
+        }
+        
+        .skill-item {
+            background: rgba(74, 144, 226, 0.2);
+            padding: 6px 12px;
+            margin: 5px 5px 5px 0;
+            border-radius: 4px;
+            font-size: 12px;
+            display: inline-block;
+        }
+        
+        .section {
+            margin-bottom: 35px;
+        }
+        
+        .section-title {
+            font-size: 22px;
+            color: #1e3a5f;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 3px solid #2563eb;
+            font-weight: 700;
+        }
+        
+        .experience-item, .project-item, .education-item {
+            margin-bottom: 25px;
+        }
+        
+        .job-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1e3a5f;
+            margin-bottom: 5px;
+        }
+        
+        .company {
+            font-size: 16px;
+            color: #2563eb;
+            font-weight: 600;
+            margin-bottom: 3px;
+        }
+        
+        .location-date {
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 12px;
+        }
+        
+        .description {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 8px;
+        }
+        
+        ul {
+            margin-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            line-height: 1.6;
+            font-size: 14px;
+            color: #333;
+        }
+        
+        .education-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1e3a5f;
+        }
+        
+        .institution {
+            font-size: 14px;
+            color: #666;
+            margin-top: 3px;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .download-btn {
+                display: none;
+            }
+            .container {
+                box-shadow: none;
+                max-width: 100%;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .resume {
+                grid-template-columns: 1fr;
+            }
+            .download-btn {
+                position: static;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="download-btn" onclick="downloadResume()">📥 Download PDF</button>
+    
+    <div class="container">
+        <div class="resume">
+            <div class="sidebar">
+                <div class="sidebar-section">
+                    <h2>Personal Details & Contact Information</h2>
+                    <div class="contact-item">DOB: 23-09-1986</div>
+                    <div class="contact-item">Marital status: Married</div>
+                    <div class="contact-item">Hyderabad, Telangana</div>
+                    <div class="contact-item">9704163834</div>
+                    <div class="contact-item"><a href="mailto:shaik.sha.2024@gmail.com">shaik.sha.2024@gmail.com</a></div>
+                    <div class="contact-item"><a href="https://linkedin.com/in/shaik-sha-9704163834" target="_blank">linkedin.com/in/shaik-sha-9704163834</a></div>
+                    <div class="contact-item"><a href="https://www.viewmyresume.site" target="_blank">www.viewmyresume.site</a></div>
+                </div>
+                
+                <div class="sidebar-section">
+                    <h2>Skills</h2>
+                    <span class="skill-item">Client profiling</span>
+                    <span class="skill-item">Communication skills</span>
+                    <span class="skill-item">Compliance</span>
+                    <span class="skill-item">CRM Analytics</span>
+                    <span class="skill-item">CRM systems</span>
+                    <span class="skill-item">Cross-functional collaboration</span>
+                    <span class="skill-item">Customer Satisfaction & Conflict Resolution</span>
+                    <span class="skill-item">Data analysis</span>
+                    <span class="skill-item">Data Analysis & Visualization (Excel, Power BI)</span>
+                    <span class="skill-item">Data Cleaning & Transformation</span>
+                    <span class="skill-item">Data collection</span>
+                    <span class="skill-item">Data validation</span>
+                    <span class="skill-item">Data Visualization</span>
+                    <span class="skill-item">Excel</span>
+                    <span class="skill-item">Exceptional Communication & Team Collaboration</span>
+                    <span class="skill-item">Issue tracking</span>
+                    <span class="skill-item">Lead generation</span>
+                    <span class="skill-item">Power BI</span>
+                    <span class="skill-item">Process optimization</span>
+                    <span class="skill-item">SQL</span>
+                    <span class="skill-item">Statistical Analysis & Reporting</span>
+                    <span class="skill-item">Strong Organizational & Time Management Skills</span>
+                </div>
+                
+                <div class="sidebar-section">
+                    <h2>Education</h2>
+                    <div class="education-item">
+                        <div class="education-title">Bachelor of Technology in Computer Science Engineering</div>
+                        <div class="institution">PRINCETON COLLEGE OF ENGINEERING AND TECHNOLOGY</div>
+                        <div class="institution">Hyderabad</div>
+                        <div class="location-date">09/2004 - 10/2008</div>
+                    </div>
+                    <div class="education-item">
+                        <div class="education-title">Class 12</div>
+                        <div class="institution">Sri Chaitanya</div>
+                        <div class="location-date">TSBIE - Telangana Board of Intermediate Education</div>
+                    </div>
+                    <div class="education-item">
+                        <div class="education-title">Class 10</div>
+                        <div class="institution">Kendriya Vidyalaya No 2 Uppal</div>
+                        <div class="location-date">01/1992</div>
+                        <div class="location-date">CBSE-Central Board of Secondary Education</div>
+                    </div>
+                </div>
+                
+                <div class="sidebar-section">
+                    <h2>Certifications</h2>
+                    <div class="contact-item">Sun Certified Java Professional</div>
+                    <div class="contact-item">Sun Microsystem</div>
+                </div>
+            </div>
+            
+            <div class="main-content">
+                <div class="header">
+                    <h1 class="name">Shaik Sha</h1>
+                    <div class="title">Data Analyst</div>
+                    <p class="summary">Results-driven professional with 4+ years of experience in customer service, now transitioning into data analytics with a strong foundation in Power BI, Excel, and data visualization. Proven ability to interpret customer behavior, identify trends, and deliver actionable insights that enhance service quality and operational efficiency. Skilled in SQL, Python, storytelling with data, cross-functional collaboration, and leveraging analytical tools to solve real-world business problems. Passionate about turning raw data into meaningful strategies that drive performance and customer satisfaction.</p>
+                </div>
+                
+                <div class="section">
+                    <h2 class="section-title">Work Experience</h2>
+                    
+                    <div class="experience-item">
+                        <div class="job-title">Data Analyst Internship</div>
+                        <div class="company">inlighn Tech</div>
+                        <div class="location-date">Remote • 10/2025 - 12/2025</div>
+                        <ul>
+                            <li>Developed interactive dashboards in Power BI within 3 months, enhancing cross-departmental decision-making by visualizing key performance indicators.</li>
+                            <li>Developed and published interactive dashboards in Power BI within 3 months, utilizing SQL for data extraction and ETL processes to ensure accurate KPI reporting.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="job-title">Data Analyst Internship</div>
+                        <div class="company">UNIFIED MENTOR</div>
+                        <div class="location-date">Hyderabad • 06/2025 - 10/2025</div>
+                        <div class="description"><strong>Data Analytics & Visualization Project</strong></div>
+                        <ul>
+                            <li>Collaborated on an ongoing data analytics project focused on job market trends for data analyst roles, leveraging real-world datasets with over 2,000 entries.</li>
+                            <li>Utilized Python libraries including NumPy, Pandas, and Matplotlib for data cleaning, transformation, and visualization.</li>
+                            <li>Conducted exploratory data analysis (EDA) to uncover patterns in salary estimates, company ratings, and job descriptions across industries and locations.</li>
+                            <li>Built interactive dashboards to visualize salary trends, company size distributions, and sector-wise job availability using tools like Plotly and Seaborn.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="job-title">Data Analyst</div>
+                        <div class="company">NULL CLASS</div>
+                        <div class="location-date">Remote • 03/2025 - 05/2025</div>
+                        <ul>
+                            <li>Developed and deployed interactive dashboards within 3 months, utilizing Power BI to visualize KPIs, enhancing decision-making across departments.</li>
+                            <li>Built interactive dashboards in Power BI Desktop (authoring .pbix files) to visualize Twitter analytics and KPIs.</li>
+                            <li>Designed data models and relationships in Power BI to support efficient analysis and reporting.</li>
+                            <li>Developed calculated measures and time-intelligence metrics using DAX to power dashboard visualizations.</li>
+                            <li>Performed ETL and data transformations using Power Query (M) to clean and shape tweet datasets.</li>
+                            <li>Designed user-focused dashboards and visualizations to surface trends, engagement metrics, and insights.</li>
+                            <li>Prepared and cleaned datasets in Excel (Tweet.xlsx) for ingestion into Power BI.</li>
+                            <li>Performed data cleaning, normalization, and preprocessing to ensure accurate analytics and reporting.</li>
+                            <li>Collected and aggregated Twitter data via the Twitter API / data extraction tools for analysis.</li>
+                            <li>Defined and tracked key performance indicators (KPIs) for Twitter engagement and growth.</li>
+                            <li>Translated raw social data into actionable insights and recommendations through exploratory analysis.</li>
+                            <li>Used Git and GitHub for version control and project organization.</li>
+                            <li>Documented dataset and dashboard usage in repository README to support stakeholder understanding.</li>
+                            <li>Published reports to Power BI Service and configured access for stakeholders.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="job-title">Lead Analyst</div>
+                        <div class="company">Y-Axis Overseas</div>
+                        <div class="location-date">Hyderabad • 08/2021 - 05/2024</div>
+                        <ul>
+                            <li>Managed and analyzed data from 70+ customer calls daily to improve service efficiency.</li>
+                            <li>Implemented and trained new employees on customer service processes using data-driven insights.</li>
+                            <li>Identified customer behavior patterns to enhance retention strategies.</li>
+                            <li>Managed high-volume incoming, missed, and outbound calls, ensuring accurate data capture and client profiling.</li>
+                            <li>Performed lead generation and cold calling, contributing to data-driven prospecting and pipeline development.</li>
+                            <li>Collected, validated, and structured client data to support eligibility analysis and decision-making processes.</li>
+                            <li>Collaborated with cross-functional teams and branch offices to align client needs with operational workflow.</li>
+                            <li>Conducted data analysis on prospect profiles to assess visa eligibility, applying rule-based logic and compliance criteria.</li>
+                            <li>Executed real-time form filling and issue documentation during calls, enhancing data accuracy and resolution tracking.</li>
+                            <li>Interpreted customer queries and redirected them to domain-specific consultants, optimizing process efficiency.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="job-title">Customer Service Executive</div>
+                        <div class="company">Qconnect Solutions</div>
+                        <div class="location-date">Hyderabad • 11/2019 - 03/2021</div>
+                        <ul>
+                            <li>Handled customer queries and analyzed feedback to improve service quality.</li>
+                            <li>Maintained customer records, tracking trends for business insights.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2 class="section-title">Projects</h2>
+                    
+                    <div class="project-item">
+                        <div class="job-title">Data analytics project - "Analysis of Chemical Components"</div>
+                        <div class="company">MedTourEasy</div>
+                        <div class="location-date">06/2025 - 07/2025</div>
+                    </div>
+                    
+                    <div class="project-item">
+                        <div class="job-title">Twitter Analytics Dashboard</div>
+                        <div class="company">null class</div>
+                        <div class="location-date">05/2025 - 06/2025</div>
+                        <div class="description"><a href="https://github.com/gsw-sk/Twitter-Analytics-Dashboard.git" target="_blank">https://github.com/gsw-sk/Twitter-Analytics-Dashboard.git</a></div>
+                        <p class="description">Developed advanced analytics and interactive dashboards to visualize tweet engagement and interaction patterns, implementing time-based and multi-criteria filtering for data integrity. Specifically designed scatter and clustered bar charts restricted by tweet metadata and time windows, enabling stakeholder insights into media engagement rates and interaction breakdowns for targeted tweet categories based on reply count, engagement rate, tweet date parity, and word count thresholds.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script>
+        function downloadResume() {
+            const button = document.querySelector('.download-btn');
+            const originalText = button.innerHTML;
+            button.innerHTML = '⏳ Generating PDF...';
+            button.disabled = true;
+            
+            const element = document.querySelector('.resume');
+            
+            const opt = {
+                margin: 0,
+                filename: 'Shaik_Sha_Data_Analyst_Resume.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { 
+                    scale: 2,
+                    useCORS: true,
+                    letterRendering: true
+                },
+                jsPDF: { 
+                    unit: 'mm', 
+                    format: 'a4', 
+                    orientation: 'portrait'
+                }
+            };
+            
+            html2pdf().set(opt).from(element).save().then(() => {
+                button.innerHTML = originalText;
+                button.disabled = false;
+            });
+        }
+    </script>
+</body>
+</html>
